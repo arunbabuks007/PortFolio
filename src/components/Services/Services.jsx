@@ -4,7 +4,7 @@ import theme_pattern from '../../assets/stripe.png'
 import Services_Data from '../../assets/Services_Data'
 const Services = () => {
   return (
-    <div className='services'>
+    <div className='services' id='services'>
         <div class="services-title">
             <h1>My Services</h1>
             {/* <img src={theme_pattern} alt="" height={40}/> */}

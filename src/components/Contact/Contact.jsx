@@ -2,8 +2,34 @@ import React from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/stripe.png'
 const Contact = () => {
+    const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "ce277496-dafd-41c9-8761-c764cc7273fd");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      alert("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      alert("Error");
+      setResult(data.message);
+    }
+  };
   return (
-    <div className='contact'>
+    <div className='contact' id='contact'>
         <div class="contact-title">
             <h1>Get In Touch</h1>
             <img src={theme_pattern} alt="" width={40} height={40}/>
@@ -24,7 +50,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <form className='contact-right'>
+            <form className='contact-right'onSubmit={onSubmit}>
                 <label htmlFor='name'>Name</label>
                 <input type='text' id='name' placeholder='Enter your name' name='name'/>
                 <label htmlFor='email'>Email</label>
