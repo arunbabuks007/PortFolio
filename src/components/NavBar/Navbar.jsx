@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from '../../assets/logo.png';
+// import logo from '../../assets/logo.png';
 import './Navbar.css';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import theme_pattern from '../../assets/stripe.png';
@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand" href="#home">
-          <img src={logo} alt="Logo" height={40} />
+          {/* <img src={logo} alt="Logo" height={40} /> */}
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
