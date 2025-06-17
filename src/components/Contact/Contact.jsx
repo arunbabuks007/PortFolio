@@ -1,6 +1,9 @@
 import React from 'react'
 import './Contact.css'
 import theme_pattern from '../../assets/stripe.png'
+import { IoMdMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FcAreaChart } from "react-icons/fc";
 const Contact = () => {
     const [result, setResult] = React.useState("");
 
@@ -39,15 +42,27 @@ const Contact = () => {
                 <h1>Let's talk</h1>
                 <p>I'm always happy to talk about my work and how I can help you.</p>
                 <div class="contact-details">
-                    <div class="contact-detail">
-                        <img src={theme_pattern} alt="" width={40}/><p>Mail</p>
-                    </div>
-                    <div class="contact-detail">
-                         <img src={theme_pattern} alt="" width={40}/><p>Phone NO</p>
-                    </div>
-                    <div class="contact-detail">
-                         <img src={theme_pattern} alt="" width={40}/><p>US area</p>
-                    </div>
+                   <div className="contact-detail">
+                      <a href="mailto:arunbabuks03@gmail.com" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+                      <IoMdMail size={24} style={{ marginRight: "8px" }} />
+                      <p style={{ margin: 0 }}>Mail ID</p>
+                      </a>
+                      </div>
+
+                      <div className="contact-detail">
+                      <a href="tel:+919876543210" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+                      <FaPhoneAlt size={24} style={{ marginRight: "8px" }} />
+                      <p style={{ margin: 0 }}>+91 98765 43210</p>
+                      </a>
+                      </div>
+
+                      <div className="contact-detail">
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <FcAreaChart size={24} style={{ marginRight: "8px" }} />
+                      <p style={{ margin: 0 }}>US Area</p>
+                      </div>
+                      </div>
+
                 </div>
             </div>
             <form className='contact-right'onSubmit={onSubmit}>

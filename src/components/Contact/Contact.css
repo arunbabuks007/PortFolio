@@ -36,7 +36,7 @@
 .contact-left p{
     font-size:80px;
     font-weight:700;
-    background:linear-gradient(270deg,#DF8908 80%,#B415FF 106%);
+    background: linear-gradient(270deg, #DF8908 0%, #F65E16 35%, #B415FF 100%);
     background-clip:text;
     -webkit-background-clip:text;   
     -webkit-text-fill-color:transparent;
@@ -97,7 +97,8 @@ resize:none;
 border:none;
 color:white;
 border-radius:50px;
-background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106%);   
+background: linear-gradient(270deg, #FF8C00 0%, #FF0080 50%, #8A2BE2 100%);
+ 
 font-size:22px;
 padding:20px 60px;
 margin-bottom:50px;

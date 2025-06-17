@@ -22,8 +22,10 @@
     width:200px;
     height:100px;
 }
+
 .about-sections{
     display: flex;
+    justify-content: space-between;
     gap:80px;
 }
 .about-right{
@@ -40,7 +42,7 @@
 }
 .about-skills{
     display:flex;
-    flex-direction:column;
+    /* flex-direction:column; */
     gap:20px;
 }
 .about-skill{

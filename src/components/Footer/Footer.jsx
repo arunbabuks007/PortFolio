@@ -2,6 +2,7 @@ import React from 'react'
 import footer_logo from '../../assets/stripe.png'
 import user_icon from '../../assets/stripe.png'
 import './Footer.css'
+import { IoMdMail } from "react-icons/io";
 const Footer = () => {
   return (
     <div className='footer'>
@@ -12,7 +13,7 @@ const Footer = () => {
             </div>
             <div class="footer-top-right">
                 <div class="footer-email-input">
-                    <img src={user_icon} alt="" width={40}/>
+                    <IoMdMail size={24} style={{ marginRight: "8px", color:"black" }} />
                     <input type="email" placeholder="Enter your email"/>
                 </div>
                 <div class="footer-subscribe">Subscribe</div>

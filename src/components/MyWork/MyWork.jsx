@@ -3,6 +3,8 @@ import './MyWork.css'
 import theme_pattern from '../../assets/stripe.png'
 import mywork_data from '../../assets/mywork'
 import arrow_icon from '../../assets/stripe.png'
+
+
 const MyWork = () => {
   return (
     <div className='mywork' id='portfolio'>
@@ -12,7 +14,7 @@ const MyWork = () => {
         </div>
         <div className='mywork-container'>
             {mywork_data.map((work,index)=>{
-                return <img key={index} src={work.w_img} alt="" height={400}/>
+                return <><a href={work.w_link} ><img key={index} src={work.w_img} alt="" height={400}/></a></>
             })}
         </div>
         <div className='mywork-showmore'>
