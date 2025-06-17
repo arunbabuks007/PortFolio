@@ -3,7 +3,8 @@
   justify-content:space-between;
   align-items:center;
   padding:1rem;
-  margin:20px 170px;
+  margin:0px 100px;
+  background-color: #161513;
 }
 .nav-menu{
     display:flex;
@@ -12,73 +13,55 @@
     gap:60px;
     font-size: 20px;
 }
-.nav-connect{
-    padding:20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%);
-    font-size:22px;
-    cursor: pointer;
-    transition:0.5s;
-}
-.nav-connect:hover{
-    transform: scale(1.05);
-}
-.nav-menu li{
-    display:flex;
-    flex-direction: column;
-    gap:5px;
-    cursor: pointer;
-}
-.nav-menu li img{
-    display: flex;
-    margin:auto;
-}
-.anchor-link{
-    text-decoration: none;
+.nav-link{
     color:white;
 }
-@media(max-width:768px){
+.btn-connect{
+    font-size: 20px;
+    color:white;
+    padding:20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#DA7C25 -5.09%,#B923E1 106.28%);
+    cursor: pointer;
+    transition:0.3s;
+}
+.btn-connect:hover{
+    transform: scale(1.05);
+    transition:0.3s;
+}
+@media(max-width:990px){
     .navbar{
-        margin:20px 50px;
-    }
-    .nav-connect{
-        display:none;
-    }
-    .nav-mob-open{
-        display:block;
-        position:fixed;
-        right:30px;
-    }
-    .nav-mob-close{
-        display:block;
-        position:relative;
-        top:30px;
-        left:290px;
-        width:30px;
-    }
-    .nav-menu{
-        position:fixed;
-        flex-direction:column;
-        align-items: center;
-        top:0;
-        gap:30px;
-        background-color:#1F0016;
-        width:350px;
-        height:100%;
-        z-index:2;
-        transition:right 0.5s;
-        right:-350px;
-    }
-    .nav-mob-close{
-        display:none;
-    }
-    .nav-menu li{
-        font-size:30px;
-        padding-left:100px;
-        flex-direction: row;
-        gap:20px;
-    }
-    .nav-mob-open{
-        display:none;
-    }
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem;
+  margin:0;
+  background-color: #161513;
+}
+.nav-menu{
+    display:flex;
+    align-items: center;
+    list-style:none;
+    gap:60px;
+    font-size: 20px;
+}
+
+.nav-link{
+    color:white;
+    margin:0 auto;
+    text-align: center;
+}
+.nav-link:hover{
+    color:pink;
+    transform: scale(1.05);
+    transition:0.3s;
+}
+.nav-link:active ,.nav-link:checked{
+    color:yellow;
+}
+.center-on-md {
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+  }
 }

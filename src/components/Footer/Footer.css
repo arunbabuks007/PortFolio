@@ -22,7 +22,7 @@
     gap:30px;
     padding:20px 30px;
     border-radius: 50px;
-    background: #a0a0a0;
+    background: white;
     cursor: pointer;
     color:white;
     padding-right:80px;
@@ -31,7 +31,6 @@
     outline:none;
     border:none;
     background: transparent;
-    color:#a0a0a0;
     font-family: outfit;
     font-size: 20px;
 }
@@ -62,7 +61,7 @@
     transition:0.3s;
 }
 
-@media(max-width:768px){
+@media(max-width:990px){
     .footer{
         margin:50px 70px;
     }
@@ -75,4 +74,14 @@
         flex-direction: column;
         margin-bottom:50px;
     }
+    .footer-email-input{
+        width: 70%;
+    }
+    .footer-bottom{
+    text-align: center;
+    }
+    .footer-bottom-right{
+        text-align: center;
+    }
+
 }

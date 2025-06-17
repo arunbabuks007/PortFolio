@@ -108,7 +108,7 @@ transition:0.3s;
     transform:scale(1.1);
     transition:0.3s;
 }
-@media(max-width:768px){
+@media(max-width:990px){
     .contact{
         gap:50px;
         margin:50px 70px;
@@ -138,15 +138,26 @@ transition:0.3s;
     .contact-detail img{
         width:25px;
     }
+    .contact-right{
+        
+    }
     .contact-right label{
-        font-size: 18px;;
+        font-size: 18px;
+        text-align: center;
     }
     .contact-right input{
         width:100%;
         font-size:20px;
+        text-align: center;
     }
     .contact-right textarea{
         width:95%;
         font-size:20px;
+        text-align: center;
+        margin:0 auto;
+    }
+    .contact-submit{
+        margin:0 auto;
+        padding:10px 40%;
     }
 }

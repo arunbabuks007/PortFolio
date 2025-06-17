@@ -1,34 +1,51 @@
-import {React,useState,useRef} from "react"
-import logo from '../../assets/7.jpg'
-import theme_pattern from '../../assets/stripe.png'
-import './Navbar.css'
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import menu_open from '../../assets/stripe.png'
-import menu_close from '../../assets/stripe.png'
-const Navbar = () => {
-  const[menu,setMenu]=useState("about");
-  const menuRef=useRef();
-  const openMenu=()=>{
-    menuRef.current.style.right="0";
-  }
-  const closeMenu=()=>{
-    menuRef.current.style.right="-350px";
-  }
-  return (
-    <div className='navbar'>
-        <img src={logo} alt="" height={40}/>
-        <img src={menu_open}  alt="" height={40} onClick={openMenu} className="nav-mob-open"/>
-    <ul ref={menuRef} className='nav-menu'>
-      <img src={menu_close} alt="" height={40} onClick={()=>setMenu("about")} className="nav-mob-close"/>
-      <li><AnchorLink className="anchor-link" offset={50} href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-      <li><AnchorLink className="anchor-link" offset={50} href='#about'><p onClick={()=>setMenu("about")}> About  </p></AnchorLink>{menu==="about"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-      <li><AnchorLink className="anchor-link" offset={50} href='#services'><p onClick={()=>setMenu("services")}> Services  </p></AnchorLink>{menu==="services"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-      <li><AnchorLink className="anchor-link" offset={50} href='#portfolio'><p onClick={()=>setMenu("portfolio")}> Portfolio  </p></AnchorLink>{menu==="portfolio"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-      <li><AnchorLink className="anchor-link" offset={50} href='#contact'><p onClick={()=>setMenu("contact")}> Contact  </p></AnchorLink>{menu==="contact"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-    </ul>
-    <div class="nav-connect"><AnchorLink className="anchor-link" offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Connect With Me</p></AnchorLink>{menu==="contact"?<img src={theme_pattern} alt="" height={40}/>:null}</div>
-    </div>
-  )
-}
+import React, { useState } from "react";
+import logo from '../../assets/logo.png';
+import './Navbar.css';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import theme_pattern from '../../assets/stripe.png';
 
-export default Navbar
+const Navbar = () => {
+  const [menu, setMenu] = useState("about");
+
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#home">
+          <img src={logo} alt="Logo" height={40} />
+        </a>
+
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {["home", "about", "services", "portfolio", "contact"].map((item) => (
+              <li className="nav-item" key={item}>
+                <AnchorLink className="nav-link" offset={50} href={`#${item}`} onClick={() => setMenu(item)}>
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {menu === item && (
+                    <img src={theme_pattern} alt="highlight" height={20} className="ms-2" />
+
+                  )}
+                </AnchorLink>
+              </li>
+            ))}
+          </ul>
+          <div className="d-flex">
+            <AnchorLink
+  className="btn btn-connect center-on-md"
+  offset={50}
+  href="#contact"
+  onClick={() => setMenu("contact")}
+>
+  Connect With Me
+</AnchorLink>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

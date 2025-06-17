@@ -130,7 +130,7 @@
         height:6px;
     }
     .about-achievements{
-        justify-content: center;
+        justify-content: space-between;
     }
     .about-achievement{
         gap:10px;
