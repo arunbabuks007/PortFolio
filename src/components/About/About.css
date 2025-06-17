@@ -41,7 +41,7 @@
     font-weight:500;
 }
 .about-skills{
-    display:flex;
+    /* display:flex; */
     /* flex-direction:column; */
     gap:20px;
 }
@@ -145,4 +145,17 @@
         text-align:center;
         font-size:16px;
     }
+}
+@media(max-width:320px){
+    .about-skills{
+    /* display:flex; */
+    /* flex-direction:column; */
+    width: 10%;
+    gap:20px;
+    
+}
+.about-achievement{
+    width: 10%;
+    margin-right: -30px;
+}
 }
