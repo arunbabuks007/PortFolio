@@ -23,7 +23,7 @@ const Navbar = () => {
       <li><AnchorLink className="anchor-link" offset={50} href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
       <li><AnchorLink className="anchor-link" offset={50} href='#about'><p onClick={()=>setMenu("about")}> About  </p></AnchorLink>{menu==="about"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
       <li><AnchorLink className="anchor-link" offset={50} href='#services'><p onClick={()=>setMenu("services")}> Services  </p></AnchorLink>{menu==="services"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
-      <li><AnchorLink className="anchor-link" offset={50} href='#Portfolio'><p onClick={()=>setMenu("portfolio")}> Portfolio  </p></AnchorLink>{menu==="portfolio"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
+      <li><AnchorLink className="anchor-link" offset={50} href='#portfolio'><p onClick={()=>setMenu("portfolio")}> Portfolio  </p></AnchorLink>{menu==="portfolio"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
       <li><AnchorLink className="anchor-link" offset={50} href='#contact'><p onClick={()=>setMenu("contact")}> Contact  </p></AnchorLink>{menu==="contact"?<img src={theme_pattern} alt="" height={40}/>:null}</li>
     </ul>
     <div class="nav-connect"><AnchorLink className="anchor-link" offset={50} href='#contact'><p onClick={()=>setMenu("contact")}>Connect With Me</p></AnchorLink>{menu==="contact"?<img src={theme_pattern} alt="" height={40}/>:null}</div>
