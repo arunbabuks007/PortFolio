@@ -64,8 +64,8 @@
     text-align: center;
   }
 }
-@media(min-width:375px){
-.navbar{
-  width: 60%;
-}
+@media (max-width: 576px) {
+  .navbar-custom-width {
+    width: 25%;
+  }
 }

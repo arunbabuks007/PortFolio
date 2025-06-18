@@ -8,7 +8,8 @@ const Navbar = () => {
   const [menu, setMenu] = useState("about");
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-custom-width">
+
       <div className="container-fluid">
         <a className="navbar-brand" href="#home">
           <img src={logo} alt="Logo" height={40} />
