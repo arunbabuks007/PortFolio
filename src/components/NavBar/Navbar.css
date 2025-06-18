@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0;
+  padding: 1rem !important;
   background-color: #161513;
+  
 }
 
 .navbar-custom-width {

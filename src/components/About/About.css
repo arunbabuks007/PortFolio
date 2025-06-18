@@ -22,7 +22,14 @@
     width:200px;
     height:100px;
 }
-
+ .about-skills{
+    display:flex; 
+    flex-direction:space-between;
+    text-align: center;
+    width: 100%;
+    gap:20px;
+    
+}
 .about-sections{
     display: flex;
     justify-content: space-between;
@@ -148,10 +155,8 @@
 }
 @media(max-width:320px){
     .about-skills{
-    /* display:flex; */
-    /* flex-direction:column; */
-    width: 10%;
     gap:20px;
+    flex-direction: column;
     
 }
 .about-achievement{
