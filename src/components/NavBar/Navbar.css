@@ -1,71 +1,86 @@
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
   background-color: #161513;
-}
-.nav-menu{
-    display:flex;
-    align-items: center;
-    list-style:none;
-    gap:60px;
-    font-size: 20px;
-}
-.nav-link{
-    color:white;
-}
-.btn-connect{
-    font-size: 20px;
-    color:white;
-    padding:20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(264deg,#DA7C25 -5.09%,#B923E1 106.28%);
-    cursor: pointer;
-    transition:0.3s;
-}
-.btn-connect:hover{
-    transform: scale(1.05);
-    transition:0.3s;
-}
-@media(max-width:990px){
-    .navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem;
-  margin:0;
-  background-color: #161513;
-}
-.nav-menu{
-    display:flex;
-    align-items: center;
-    list-style:none;
-    gap:60px;
-    font-size: 20px;
 }
 
-.nav-link{
-    color:white;
-    margin:0 auto;
-    text-align: center;
+.navbar-custom-width {
+  width: 100%;
+  padding: 0 20px;
 }
-.nav-link:hover{
-    color:pink;
-    transform: scale(1.05);
-    transition:0.3s;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
 }
-.nav-link:active ,.nav-link:checked{
-    color:yellow;
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
 }
-.center-on-md {
+
+.nav-link:hover {
+  color: pink;
+  transform: scale(1.05);
+}
+
+.nav-link:active,
+.nav-link:checked {
+  color: yellow;
+}
+
+.btn-connect {
+  font-size: 20px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn-connect:hover {
+  transform: scale(1.05);
+}
+
+/* Medium screens - Stack button */
+@media (max-width: 990px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  .center-on-md {
     display: block;
     margin: 15px auto;
     text-align: center;
   }
 }
+
+/* Small screens - Full width */
 @media (max-width: 576px) {
   .navbar-custom-width {
-    width: 60%;
+    width: 100%; /* Don’t shrink navbar */
+  }
+
+  .btn-connect {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 }
