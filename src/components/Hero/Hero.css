@@ -98,5 +98,8 @@
     }
 }
 @media(max-width:320px){
-
+ .hero h1{
+    width: 10% !important;
+ }
+ 
 }
