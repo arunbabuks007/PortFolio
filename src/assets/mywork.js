@@ -1,6 +1,6 @@
 import project1_img from './PicMyBus.png';
 import project2_img from './Quest.png';
-import project3_img from './1.png';
+import project3_img from './VerBI.png';
 import project4_img from './1.png';
 import project5_img from './1.png';
 import project6_img from './1.png';
@@ -8,19 +8,19 @@ import project6_img from './1.png';
 const mywork_data = [
   {
     w_no: 1,
-    w_name: "Web design",
+    w_name: "PicMyBus",
     w_img: project1_img,
     w_link: "https://picmybus.ct.ws/index.php"
   },
   {
     w_no: 2,
-    w_name: "Web design",
+    w_name: "Quest Tree",
     w_img: project2_img,
     w_link: "https://questree.ct.ws/?i=1"
   },
   {
     w_no: 3,
-    w_name: "Web design",
+    w_name: "VerBI",
     w_img: project3_img
   },
   // {
