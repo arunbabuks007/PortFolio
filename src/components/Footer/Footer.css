@@ -3,62 +3,35 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  color: white; /* For dark background */
 }
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.footer-top-left p {
-  font-size: 20px;
-  max-width: 400px;
-  margin-top:20px;
 }
 
 .footer-top-right {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer-email-input {
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 20px 30px;
-  padding-right: 30vh;
-  border-radius: 50px;
-  background: white;
-  cursor: pointer;
-  color: black;
-  max-width: 100%;
-  
+  gap: 8px;
+  transition: color 0.3s;
 }
 
-.footer-email-input input {
-  outline: none;
-  border: none;
-  background: transparent;
-  font-family: outfit;
-  font-size: 20px;
-  flex: 1;
-}
-
-.footer-subscribe {
-  font-size: 20px;
-  padding: 20px 40px;
-  
-  border-radius: 50px;
-  background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.footer-subscribe:hover {
-  transform: scale(1.05);
+.footer-link:hover {
+  color: #DA7C25;
 }
 
 .footer-bottom {
@@ -72,16 +45,12 @@
 
 .footer-bottom-right {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer-email-input:hover {
-  border: 2px solid white;
-  transition: 0.3s;
-}
-
-/* ✅ Tablet (max-width: 990px) */
+/* Tablet (max-width: 990px) */
 @media (max-width: 990px) {
   .footer {
     margin: 50px 40px;
@@ -89,14 +58,15 @@
 
   .footer-top {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
   }
 
   .footer-top-right {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    text-align: center;
   }
 
   .footer-bottom {
@@ -107,41 +77,26 @@
   }
 
   .footer-bottom-right {
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
 
-/* ✅ Mobile (max-width: 600px) */
+/* Mobile (max-width: 600px) */
 @media (max-width: 600px) {
   .footer {
     margin: 40px 20px;
     gap: 20px;
   }
 
-  .footer-email-input {
-    flex-direction: row;
-    padding: 12px 20px;
-    padding-right: 20px;
-    width: 100%;
-  }
-
-  .footer-email-input input {
+  .footer-link {
     font-size: 16px;
   }
 
-  .footer-subscribe {
-    padding: 12px 24px;
-    font-size: 16px;
-    padding-right: 20px;
-    width: 100%;
-  }
-
-  .footer-top-left p {
-    font-size: 16px;
-  }
-
-  .footer-bottom-right p {
-    font-size: 14px;
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
   }
 }

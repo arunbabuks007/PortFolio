@@ -19,7 +19,7 @@
 }
 
 .hero h1 span {
-  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,7 +54,7 @@
 .hero-connect {
   padding: 25px 45px;
   border-radius: 50px;
-  background: linear-gradient(264deg, #cc208e -5.09%, #6713d2 106.28%);
+  background: linear-gradient(261deg, #DA7C25, #B923E1);
   cursor: pointer;
 }
 
@@ -157,4 +157,10 @@
     width: 180px;
     height: 180px;
   }
+}
+.connect-link{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
 }

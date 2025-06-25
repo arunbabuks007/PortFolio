@@ -3,7 +3,8 @@ import logo from '../../assets/Logo.png';
 import './Navbar.css';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import theme_pattern from '../../assets/stripe.png';
-
+import { motion } from 'framer-motion';
+import { FaArrowLeft } from 'react-icons/fa';
 const Navbar = () => {
   const [menu, setMenu] = useState("about");
 
@@ -26,7 +27,20 @@ const Navbar = () => {
                 <AnchorLink className="nav-link" offset={50} href={`#${item}`} onClick={() => setMenu(item)}>
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                   {menu === item && (
-                    <img src={theme_pattern} alt="highlight" height={20} className="ms-2" />
+                     <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: '100%' }}
+        transition={{
+          duration: .5,
+          // repeat: Infinity,
+          repeatType: 'reverse',
+          ease: 'easeInOut',
+        }}
+        style={{
+          height: '3px',
+          backgroundColor: 'white',
+        }}
+      />
 
                   )}
                 </AnchorLink>
@@ -40,7 +54,7 @@ const Navbar = () => {
   href="#contact"
   onClick={() => setMenu("contact")}
 >
-  Connect With Me
+  Contact Me
 </AnchorLink>
           </div>
         </div>

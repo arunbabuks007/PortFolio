@@ -42,7 +42,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className='contact' id='contact'>
+    <div className='contact d-flex justify-content-center align-items-center' id='contact'>
         <div class="contact-title">
             <h1>Get In Touch</h1>
             {/* <img src={theme_pattern} alt="" width={40} height={40}/> */}

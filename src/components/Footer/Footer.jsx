@@ -1,35 +1,46 @@
-import React from 'react'
-import footer_logo from '../../assets/stripe.png'
-import user_icon from '../../assets/stripe.png'
-import './Footer.css'
+import React from 'react';
 import { IoMdMail } from "react-icons/io";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import './Footer.css';
+
 const Footer = () => {
   return (
     <div className='footer'>
-        <div class="footer-top">
-            <div class="footer-top-left">
-                {/* <img src={footer_logo} alt="" width={40}/> */}
-                <p>I'm Arun Babu Subramanian</p>
-            </div>
-            <div class="footer-top-right">
-                <div class="footer-email-input">
-                    <IoMdMail size={24} style={{ marginRight: "8px", color:"black" }} />
-                    <input type="email" placeholder="Enter your email"/>
-                </div>
-                <div class="footer-subscribe">Subscribe</div>
-            </div>
+      <div className="footer-top">
+        <div className="footer-top-right">
+          <a href="mailto:arunbabuks03@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <IoMdMail size={24} /> Email
+          </a>
+          <a href="https://github.com/arunbabuks007" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <FaGithub size={24} /> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/arun-babu-k-s" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <FaLinkedin size={24} /> LinkedIn
+          </a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <FaFilePdf size={24} /> Resume
+          </a>
         </div>
-        <hr/>
-        <div class="footer-bottom">
-            <p class="footer-bottom-left">Copyright © 2021 Arun Babu Subramanian</p>
-            <div class="footer-bottom-right">
-                <p>Terms of Services</p>
-                <p>Privacy Policy</p>
-                <p>Connect With Me</p>
-            </div>
-        </div>
-    </div>
-  )
-}
+      </div>
 
-export default Footer
+      <hr />
+
+      <div className="footer-bottom">
+        <p className="footer-bottom-left" id="Connect">© 2025 Arun Babu Subramanian</p>
+        <div className="footer-bottom-right">
+          <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="footer-link">
+            Terms of Services
+          </a>
+          <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="footer-link">
+            Privacy Policy
+          </a>
+          <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master" target="_blank" rel="noopener noreferrer" className="footer-link">
+            Connect With Me
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
