@@ -124,9 +124,16 @@
     line-height: 24px;
   }
 
-  .hero-action {
-    flex-direction: column;
-  }
+.hero-action {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center (if height defined) */
+  gap: 20px;               /* space between buttons */
+  margin-top: 20px;
+  flex-wrap: wrap;         /* responsive stacking on small screens */
+  text-align: center;
+}
+
 
   .hero-connect,
   .hero-resume {

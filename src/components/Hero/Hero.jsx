@@ -12,7 +12,7 @@ const Hero = () => {
 <p>
   I build robust and responsive web applications using Java, Spring Boot, and modern frontend technologies like React.js. I'm passionate about clean code, performance, and continuous learning in full stack development.
 </p>
-  <div className='hero-action'>
+  <div className='hero-action '>
             <div className='hero-connect'><AnchorLink href='#Connect' className='connect-link'>Connect With Me</AnchorLink></div>
             <div className='hero-resume'><a href={resume} download>My Resume</a></div>
         </div>
