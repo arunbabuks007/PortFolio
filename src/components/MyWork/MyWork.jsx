@@ -10,7 +10,7 @@ const MyWork = () => {
     <div className='mywork' id='portfolio'>
         <div className='mywork-title'> 
             <h1>My latest Work</h1>
-            <img src={theme_pattern} alt="" height={40}/>
+            {/* <img src={theme_pattern} alt="" height={40}/> */}
         </div>
         <div className='mywork-container'>
           {mywork_data.map((work, index) => (

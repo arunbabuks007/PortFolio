@@ -14,6 +14,7 @@
 .footer-top-left p {
   font-size: 20px;
   max-width: 400px;
+  margin-top:20px;
 }
 
 .footer-top-right {
@@ -28,12 +29,13 @@
   align-items: center;
   gap: 12px;
   padding: 20px 30px;
-  padding-right: 80px;
+  padding-right: 30vh;
   border-radius: 50px;
   background: white;
   cursor: pointer;
   color: black;
   max-width: 100%;
+  
 }
 
 .footer-email-input input {
@@ -48,6 +50,7 @@
 .footer-subscribe {
   font-size: 20px;
   padding: 20px 40px;
+  
   border-radius: 50px;
   background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
   cursor: pointer;
@@ -130,6 +133,8 @@
   .footer-subscribe {
     padding: 12px 24px;
     font-size: 16px;
+    padding-right: 20px;
+    width: 100%;
   }
 
   .footer-top-left p {

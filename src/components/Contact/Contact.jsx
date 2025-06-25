@@ -4,6 +4,7 @@ import theme_pattern from '../../assets/stripe.png'
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FcAreaChart } from "react-icons/fc";
+import Swal from 'sweetalert2';
 const Contact = () => {
     const [result, setResult] = React.useState("");
 
@@ -23,11 +24,20 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      alert("Form Submitted Successfully");
+      Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+});
       event.target.reset();
     } else {
       console.log("Error", data);
-      alert("Error");
+      Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: 'Try Again...'
+});
       setResult(data.message);
     }
   };
@@ -35,7 +45,7 @@ const Contact = () => {
     <div className='contact' id='contact'>
         <div class="contact-title">
             <h1>Get In Touch</h1>
-            <img src={theme_pattern} alt="" width={40} height={40}/>
+            {/* <img src={theme_pattern} alt="" width={40} height={40}/> */}
         </div>
         <div class="contact-section">
             <div class="contact-left">

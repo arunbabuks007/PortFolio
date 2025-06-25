@@ -42,7 +42,8 @@
 
 .about-left img {
   width: 100%;
-  max-width: 270px;
+  padding-top:30px;
+  max-width: 350px;
   height: auto; /* Maintain aspect ratio */
 }
 

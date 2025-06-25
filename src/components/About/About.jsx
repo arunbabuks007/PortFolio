@@ -7,7 +7,7 @@ const About = () => {
     <div className='about' id='about'>
         <div className='about-title'>
             <h1>About Me</h1>
-            <img src={theme_pattern} alt="" height={40}/>
+            {/* <img src={theme_pattern} alt="" height={40}/> */}
         </div>
         <div className='about-section d-flex '>
             <div className='about-left'>
