@@ -15,8 +15,8 @@ const Navbar = () => {
           <img src={logo} alt="Logo" height={40} />
         </a>
 
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon "></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNav">

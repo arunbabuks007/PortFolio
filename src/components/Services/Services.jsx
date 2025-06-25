@@ -15,10 +15,10 @@ const Services = () => {
             <h3>{service.s_no}</h3>
             <h2>{service.s_name}</h2>
             <p>{service.s_desc}</p>
-            <div className='servies-readmore'>
+            {/* <div className='servies-readmore'>
                 <p>Read More</p>
                 <img src={theme_pattern} alt="" height={40}/>
-            </div>
+            </div> */}
             </div>
             })}
         </div>

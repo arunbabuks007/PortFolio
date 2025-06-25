@@ -7,9 +7,11 @@ const Hero = () => {
   return (
     <div className='hero' id="home">
         <img src={profile} alt="profile" className="hero-profile-pic " />
-        <h1><span>I'm Arun Babu Subramanian</span>, a Full Stack Developer</h1>
-        <p>I'm a passionate Full Stack Developer who loves to build websites and web applications. I have experience in building responsive websites, mobile apps, and web applications using HTML, CSS, and JavaScript. I am also skilled in using React.js and Node.js for building web applications.</p>
-        <div className='hero-action'>
+      <h1><span>I'm Arun Babu Subramanian</span>, a Java Full Stack Developer</h1>
+<p>
+  I build robust and responsive web applications using Java, Spring Boot, and modern frontend technologies like React.js. I'm passionate about clean code, performance, and continuous learning in full stack development.
+</p>
+  <div className='hero-action'>
             <div className='hero-connect'>Connect With Me</div>
             <div className='hero-resume'><a href={resume} download>My Resume</a></div>
         </div>

@@ -20,10 +20,10 @@ const MyWork = () => {
 ))}
 
         </div>
-        <div className='mywork-showmore'>
+        {/* <div className='mywork-showmore'>
             <p>Show More</p>
             <img src={arrow_icon} alt="" height={40}/>
-        </div>
+        </div> */}
     </div>
   )
 }

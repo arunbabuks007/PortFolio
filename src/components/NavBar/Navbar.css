@@ -20,23 +20,6 @@
   font-size: 20px;
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  text-align: center;
-}
-
-.nav-link:hover {
-  color: pink;
-  transform: scale(1.05);
-}
-
-.nav-link:active,
-.nav-link:checked {
-  color: yellow;
-}
-
 .btn-connect {
   font-size: 20px;
   color: white;
@@ -83,4 +66,39 @@
   .nav-link {
     font-size: 16px;
   }
+  
+
 }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: pink;
+  transform: scale(1.05);
+}
+
+.nav-link:active {
+  color: yellow;
+}
+
+.nav-link:visited {
+  color: white !important;
+}
+/* .nav-link:focus {
+  outline: 2px solid white;
+  border-radius: 40px;
+} */
+.nav-link:enabled {
+  background-color: white;
+  cursor: not-allowed;
+}
+

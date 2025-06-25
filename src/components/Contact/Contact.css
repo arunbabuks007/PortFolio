@@ -162,3 +162,25 @@ transition:0.3s;
         padding:10px 40%;
     }
 }
+.contact-right input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 30px;
+  padding-right: 80px;
+  background: white;
+  cursor: pointer;
+  color: black;
+  max-width: 100%;
+}
+.contact-right textarea  {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 30px;
+  padding-right: 80px;
+  background: white;
+  cursor: pointer;
+  color: black;
+  max-width: 100%;
+}

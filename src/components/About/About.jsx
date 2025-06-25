@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/stripe.png'
-import profile_img from '../../assets/7.jpg'
+import profile_img from '../../assets/AboutImg.png'
 const About = () => {
   return (
     <div className='about' id='about'>
@@ -14,14 +14,15 @@ const About = () => {
                 <img src={profile_img} alt="" height={300}width={270}/>
             </div>
             <div className='about-right mx-4'>
-                <div class="about-para">
-                    <p>
-                    I am a passionate Front-End Developer who loves to build websites and web applications. I have experience in building responsive websites, mobile apps, and web applications using HTML, CSS, and JavaScript. I am also skilled in using React.js and Node.js for building web applications.
-                    </p>
-                    <p>
-                        My Passion lies in building websites and web applications. I have experience in building responsive websites, mobile apps, and web applications using HTML, CSS, and JavaScript. I am also skilled in using React.js and Node.js for building web applications.
-                    </p>
-                </div>
+               <div class="about-para">
+  <p>
+    I am a passionate Java Full Stack Developer with experience in building responsive websites and web applications. I work with modern front-end technologies like HTML, CSS, JavaScript, and React.js, while leveraging Java, Spring Boot, and Node.js for powerful and scalable back-end development.
+  </p>
+  <p>
+    My passion lies in crafting high-quality, user-centric digital experiences. I enjoy solving complex problems, continuously improving my skill set, and building full-stack solutions that make an impact. I'm also experienced in integrating APIs, handling databases, and deploying web applications efficiently.
+  </p>
+</div>
+
                 
             </div>
         </div>
