@@ -55,23 +55,18 @@ const Contact = () => {
                    <div className="contact-detail">
                       <a href="mailto:arunbabuks03@gmail.com" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                       <IoMdMail size={24} style={{ marginRight: "8px" }} />
-                      <p style={{ margin: 0 }}>Mail ID</p>
+                      <p style={{ margin: 0 }}>arunbabuks03@gmail.com</p>
                       </a>
                       </div>
 
                       <div className="contact-detail">
                       <a href="tel:+919876543210" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                       <FaPhoneAlt size={24} style={{ marginRight: "8px" }} />
-                      <p style={{ margin: 0 }}>+91 98765 43210</p>
+                      <p style={{ margin: 0 }}>+91 95009 20812</p>
                       </a>
                       </div>
 
-                      <div className="contact-detail">
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <FcAreaChart size={24} style={{ marginRight: "8px" }} />
-                      <p style={{ margin: 0 }}>US Area</p>
-                      </div>
-                      </div>
+                     
 
                 </div>
             </div>
