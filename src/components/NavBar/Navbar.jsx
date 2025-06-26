@@ -6,7 +6,7 @@ import theme_pattern from '../../assets/stripe.png';
 import { motion } from 'framer-motion';
 import { FaArrowLeft } from 'react-icons/fa';
 const Navbar = () => {
-  const [menu, setMenu] = useState("about");
+  const [menu, setMenu] = useState("home");
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-custom-width">
