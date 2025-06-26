@@ -80,7 +80,9 @@
   transition: 0.3s;
   text-align: center;
 }
-
+.nav-link:focus{
+  color:white !important;
+}
 .nav-link:hover {
   color: pink;
   transform: scale(1.05);
