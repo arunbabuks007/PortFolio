@@ -1,0 +1,175 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 80px 170px;
+  padding: 40px 0;
+  background: linear-gradient(180deg, rgba(245, 243, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 16px;
+}
+
+.experience-title {
+  position: relative;
+  text-align: center;
+}
+
+.experience-title h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.title-underline {
+  width: 100px;
+  height: 6px;
+  background: linear-gradient(90deg, #6B46C1 0%, #F687B3 100%);
+  border-radius: 50px;
+  margin: 10px auto 0;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-intro {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+.experience-intro p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.bot-title {
+  color: #b415ff !important;
+}
+
+.experience-chatbots {
+  display: flex; /* Changed from grid to flex */
+  flex-direction: column; /* Stacks items vertically */
+  gap: 30px; /* Maintains spacing between cards */
+  width: 100%;
+}
+
+.chatbot-card {
+  color: white !important;
+  background: #1f1f1f !important;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.chatbot-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border: 2px solid #764ba2;
+  background-image: linear-gradient(45deg, #330867, #330867) !important;
+}
+
+.chatbot-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+.chatbot-card:hover .chatbot-icon {
+  opacity: 0.5;
+}
+
+.chatbot-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin: 0 0 10px;
+}
+
+.chatbot-card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tablet and Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .experience {
+    margin: 50px 20px;
+    padding: 30px 0;
+    gap: 40px;
+  }
+
+  .experience-title h1 {
+    font-size: 50px;
+  }
+
+  .title-underline {
+    width: 80px;
+    height: 5px;
+  }
+
+  .experience-intro {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .experience-chatbots {
+    gap: 20px;
+  }
+
+  .chatbot-card h3 {
+    font-size: 22px;
+  }
+
+  .chatbot-card p {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile (max-width: 320px) */
+@media (max-width: 320px) {
+  .experience {
+    margin: 30px 10px;
+    gap: 30px;
+  }
+
+  .experience-title h1 {
+    font-size: 36px;
+  }
+
+  .title-underline {
+    width: 60px;
+    height: 4px;
+  }
+
+  .experience-intro {
+    font-size: 16px;
+  }
+
+  .chatbot-card h3 {
+    font-size: 20px;
+  }
+
+  .chatbot-card p {
+    font-size: 14px;
+  }
+
+  .chatbot-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

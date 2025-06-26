@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {["home", "about", "services", "portfolio", "contact"].map((item) => (
+            {["home", "about", "services","Exp&Projects", "portfolio", "contact"].map((item) => (
               <li className="nav-item" key={item}>
                 <AnchorLink className="nav-link" offset={50} href={`#${item}`} onClick={() => setMenu(item)}>
                   {item.charAt(0).toUpperCase() + item.slice(1)}

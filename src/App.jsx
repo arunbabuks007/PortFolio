@@ -6,6 +6,7 @@ import Services from './components/Services/Services'
 import MyWork from './components/MyWork/MyWork'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Experience from './components/Experience/Experience'
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <About/>
+        <Experience/>
         <Services/>
         <MyWork/>
         <Contact/>

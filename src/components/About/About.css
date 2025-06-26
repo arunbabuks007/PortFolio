@@ -66,8 +66,8 @@
 .about-skills {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  width: 100%;
+  /* gap: 20px;
+  width: 100%; */
   flex-wrap: wrap; /* Allow skills to wrap on smaller screens */
 }
 
@@ -117,6 +117,15 @@
 .about-achievement h1 {
   font-size: 60px;
   font-weight: 700;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-achievement h3 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top:20px;
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
   background-clip: text;
   -webkit-background-clip: text;
