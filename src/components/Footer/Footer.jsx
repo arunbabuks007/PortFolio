@@ -17,9 +17,9 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/arun-babu-k-s" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FaLinkedin size={24} /> LinkedIn
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <FaFilePdf size={24} /> Resume
-          </a>
+            {/* <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="footer-link">
+              <FaFilePdf size={24} /> Resume
+            </a> */}
         </div>
       </div>
 
