@@ -53,7 +53,7 @@ const About = () => {
         e.preventDefault();
         showBlurOverlay();
       }
-      if (e.metaKey || (e.metaKey && e.shiftKey && e.key.toLowerCase() === 's')) {
+      if (e.metaKey || (e.metaKey && e.shiftKey && e.key.toLowerCase() === 's')||(e.key ===e.ctrlKey&&e.key.toLowerCase()==="n")) {
         showBlurOverlay();
       }
     };
@@ -96,7 +96,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='about-skills col-12'>
+      <div className='about-skills col-8'>
         <div className='col-6 col-sm-6'>
           <div className='about-skill'><p>HTML & CSS <hr style={{ width: "80%" }} /></p></div>
           <div className='about-skill'><p>REACT JS <hr style={{ width: "50%" }} /></p></div>

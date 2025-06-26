@@ -65,7 +65,7 @@
 
 .about-skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* gap: 20px;
   width: 100%; */
   flex-wrap: wrap; /* Allow skills to wrap on smaller screens */
