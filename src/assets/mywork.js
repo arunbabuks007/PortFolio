@@ -10,7 +10,7 @@ const mywork_data = [
     w_no: 1,
     w_name: "VerBI",
     w_img: project3_img,
-    w_link: "https://verbi-pi.vercel.app"
+    w_link: "https://verbi-ai.netlify.app"
   },
   {
     w_no: 2,
