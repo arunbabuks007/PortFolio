@@ -9,7 +9,8 @@ const mywork_data = [
   {
     w_no: 1,
     w_name: "VerBI",
-    w_img: project3_img
+    w_img: project3_img,
+    w_link: "verbi-pi.vercel.app"
   },
   {
     w_no: 2,
