@@ -36,7 +36,7 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Basic CRUD Operation',
+      title: 'Quest Tree',
       technologies: 'PHP Full Stack (PHP, MySQL)',
       description: [
         'Web app for college IRP Team to manage data with CRUD operations:',
