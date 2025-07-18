@@ -8,7 +8,7 @@ import arrow_icon from '../../assets/stripe.png'
 const MyWork = () => {
   return (
     <div className='mywork' id='portfolio'>
-        <div className='mywork-title'> 
+        <div className='mywork-title m-5'> 
             <h1>My latest Work</h1>
             {/* <img src={theme_pattern} alt="" height={40}/> */}
         </div>

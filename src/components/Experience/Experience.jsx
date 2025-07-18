@@ -50,7 +50,7 @@ const Experience = () => {
 
   return (
     <div className="experience" id="Exp&Projects">
-      <div className="experience-title">
+      <div className="experience-title m-5">
         <h1 className="text-white">Experience & Projects</h1>
         <div className="title-underline"></div>
       </div>
