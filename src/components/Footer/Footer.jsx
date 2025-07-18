@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="footer-link">
             Privacy Policy
           </a> */}
-          <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master" target="_blank" rel="noopener noreferrer" className="footer-link">
+          <a href="https://www.linkedin.com/in/arun-babu-k-s/" target="_blank"  className="footer-link">
             Connect With Me
           </a>
         </div>
