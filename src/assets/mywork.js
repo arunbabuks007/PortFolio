@@ -1,9 +1,8 @@
 import project1_img from './PicMyBus.png';
 import project2_img from './Quest.png';
 import project3_img from './VerBI.png';
-import project4_img from './1.png';
-import project5_img from './1.png';
-import project6_img from './1.png';
+import project4_img from './SnapMasterIcon.png';
+import project5_img from './PromptEdge.jpg';
 
 const mywork_data = [
   {
@@ -23,6 +22,19 @@ const mywork_data = [
     w_name: "Quest Tree",
     w_img: project2_img,
     w_link: "https://questree.ct.ws/?i=1"
+  },
+  {
+    w_no: 4,
+    w_name: "SnapMaster – Screenshot & Editor",
+    w_img: project4_img,
+    w_link: "https://chromewebstore.google.com/detail/snapmaster-–-screenshot-e/bllhjhfajpclmnlogplcfjjnlkmnlfmp"
+  },
+  
+  {
+    w_no: 5,
+    w_name: "PromptEdge",
+    w_img: project5_img,
+    w_link: "https://chromewebstore.google.com/detail/promptedge/bmghmbjhikdailncbdicbocjgedllnee"
   },
   
   // {

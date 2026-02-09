@@ -93,26 +93,35 @@ const About = () => {
         </div>
 
         <div className='about-right mx-4' data-aos="fade-left">
-          <div className='about-para'>
+          <div className="about-para">
             <p>
-              I am a passionate Java Full Stack Developer with experience in building responsive websites and web applications. I work with modern front-end technologies like HTML, CSS, JavaScript, and React.js, while leveraging Java, Spring Boot, and Node.js for powerful and scalable back-end development.
+              I’m a Software Engineer specializing in Java-based backend development
+              and modern full-stack applications.
+              I build scalable REST APIs using Spring Boot,
+              design efficient database schemas,
+              and develop responsive UIs with React.js.
             </p>
+
             <p>
-              My passion lies in crafting high-quality, user-centric digital experiences. I enjoy solving complex problems, continuously improving my skill set, and building full-stack solutions that make an impact. I'm also experienced in integrating APIs, handling databases, and deploying web applications efficiently.
+              I have experience working on real-world projects involving authentication,
+              role-based access, database optimization, and API integrations.
+              I value clean code, system performance, and delivering reliable solutions
+              that meet business requirements.
             </p>
           </div>
+
         </div>
       </div>
 
       <div className='about-skills col-8' data-aos="fade-up" data-aos-delay="100">
         <div className='col-6 col-sm-6'>
           <div className='about-skill' data-aos="fade-right" data-aos-delay="200"><p>HTML & CSS <hr style={{ width: "80%" }} /></p></div>
-          <div className='about-skill' data-aos="fade-right" data-aos-delay="300"><p>REACT JS <hr style={{ width: "50%" }} /></p></div>
+          <div className='about-skill' data-aos="fade-right" data-aos-delay="300"><p>REACT.JS <hr style={{ width: "50%" }} /></p></div>
           <div className='about-skill' data-aos="fade-right" data-aos-delay="400"><p>JAVASCRIPT <hr style={{ width: "60%" }} /></p></div>
           <div className='about-skill' data-aos="fade-right" data-aos-delay="500"><p>JAVA <hr style={{ width: "90%" }} /></p></div><br /><br />
         </div>
         <div className='col-6 col-sm-6'>
-          <div className='about-skill' data-aos="fade-left" data-aos-delay="200"><p>SPRINGBOOT <hr style={{ width: "80%" }} /></p></div>
+          <div className='about-skill' data-aos="fade-left" data-aos-delay="200"><p>SPRING BOOT <hr style={{ width: "80%" }} /></p></div>
           <div className='about-skill' data-aos="fade-left" data-aos-delay="300"><p>POSTGRESQL <hr style={{ width: "90%" }} /></p></div>
           <div className='about-skill' data-aos="fade-left" data-aos-delay="400"><p>PHP <hr style={{ width: "90%" }} /></p></div>
           <div className='about-skill' data-aos="fade-left" data-aos-delay="500"><p>MYSQL <hr style={{ width: "90%" }} /></p></div>
@@ -121,18 +130,22 @@ const About = () => {
 
       <div className='about-achievements' data-aos="fade-up" data-aos-delay="600">
         <div className='about-achievement' data-aos="zoom-in" data-aos-delay="700">
-          <h3>6-Month Intern</h3>
-          <p>YEARS OF EXPERIENCE</p>
+          <h3>1+</h3>
+<p>YEARS OF EXPERIENCE</p>
+
+
         </div>
         <hr />
         <div className='about-achievement' data-aos="zoom-in" data-aos-delay="800">
-          <h1>6+</h1>
-          <p>PROJECTS COMPLETED</p>
+<h1>6+</h1>
+<p>REAL-WORLD PROJECTS</p>
+
         </div>
         <hr />
         <div className='about-achievement' data-aos="zoom-in" data-aos-delay="900">
-          <h1>2+</h1>
-          <p>HAPPY CLIENTS</p>
+        <h1>2+</h1>
+<p>PRODUCTION DEPLOYMENTS</p>
+
         </div>
       </div>
     </div>

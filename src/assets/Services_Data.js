@@ -1,24 +1,39 @@
 const Services_Data = [
   {
     s_no: "01",
-    s_name: "Java Spring Boot",
-    s_desc: "Developing robust and scalable backend services and RESTful APIs using Java with the Spring Boot framework and MVC architecture."
-   },
+    s_name: "Full-Stack Web Development",
+    s_desc:
+      "Design and develop scalable web applications using Java, Spring Boot, React, and MERN stack with clean architecture and production-ready code."
+  },
   {
     s_no: "02",
-    s_name: "ReactJS Development",
-    s_desc: "Building fast, interactive, and responsive single-page applications using ReactJS with reusable components and modern hooks."
-  
+    s_name: "Backend & API Development",
+    s_desc:
+      "Build secure, high-performance REST APIs with Spring Boot or Node.js, including authentication, role-based access, and database integration."
   },
   {
     s_no: "03",
-    s_name: "MySQL & PostgreSQL",
-    s_desc: "Designing and managing relational databases, optimizing queries, and ensuring data integrity using MySQL and PostgreSQL."
+    s_name: "Real-Time Systems",
+    s_desc:
+      "Develop real-time applications using WebSockets and MQTT for live dashboards, chat systems, and IoT data streaming."
   },
   {
     s_no: "04",
-    s_name: "PHP & Web Services",
-    s_desc: "Creating secure and functional web applications and dynamic websites using PHP, including server-side scripting and API integration."
+    s_name: "Cloud Deployment",
+    s_desc:
+      "Deploy and manage applications on DigitalOcean with database setup, S3-compatible object storage, and production configurations."
+  },
+  {
+    s_no: "05",
+    s_name: "Chrome Extension Development",
+    s_desc:
+      "Design and publish Chrome extensions with real-world features, handling store policies, production releases, and user feedback."
+  },
+  {
+    s_no: "06",
+    s_name: "System Integration & Optimization",
+    s_desc:
+      "Integrate third-party APIs, optimize database queries, and improve application performance and reliability."
   }
 ];
 

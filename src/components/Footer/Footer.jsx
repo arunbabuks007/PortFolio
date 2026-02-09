@@ -26,7 +26,10 @@ const Footer = () => {
       <hr />
 
       <div className="footer-bottom">
-        <p className="footer-bottom-left" id="Connect">© 2025 Arun Babu Subramanian</p>
+      <p className="footer-bottom-left" id="Connect">
+  © 2025 Arun Babu Subramanian. All rights reserved.
+</p>
+
         <div className="footer-bottom-right">
           {/* <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="footer-link">
             Terms of Services
@@ -34,9 +37,15 @@ const Footer = () => {
           <a href="https://github.com/ArunBabuSubramanian/Portfolio-2020-master/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="footer-link">
             Privacy Policy
           </a> */}
-          <a href="https://www.linkedin.com/in/arun-babu-k-s/" target="_blank"  className="footer-link">
-            Connect With Me
-          </a>
+          <a
+  href="https://www.linkedin.com/in/arun-babu-k-s/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="footer-link"
+>
+  Let’s Connect
+</a>
+
         </div>
       </div>
     </div>

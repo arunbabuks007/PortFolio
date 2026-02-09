@@ -94,16 +94,24 @@ const Hero = () => {
         data-aos="zoom-in"
         data-aos-delay="100"
       />
-      
-      <h1 data-aos="fade-up" data-aos-delay="200">
-        <span>I'm Arun Babu Subramanian</span>, a Java Full Stack Developer
+
+      <h1>
+        <span>I'm Arun Babu Subramanian</span>, a Software Engineer building scalable web applications
       </h1>
-      <p data-aos="fade-up" data-aos-delay="300">
-        I build robust and responsive web applications using Java, Spring Boot, and modern frontend technologies like React.js. I'm passionate about clean code, performance, and continuous learning in full stack development.
+
+      <p>
+        Software Engineer with hands-on experience in Java, Spring Boot, and React.js.
+        I build scalable backend services, clean APIs, and responsive UIs with a strong focus
+        on performance, code quality, and real-world problem solving.
       </p>
+
+
       <div className='hero-action' data-aos="fade-up" data-aos-delay="400">
         <div className='hero-connect' data-aos="fade-right" data-aos-delay="500">
-          <AnchorLink href='#Connect' className='connect-link'>Connect With Me</AnchorLink>
+          <AnchorLink href="#Connect" className="connect-link">
+            Let’s Connect
+          </AnchorLink>
+
         </div>
         <div className='hero-resume' data-aos="fade-left" data-aos-delay="500">
           <a href={resume} download>My Resume</a>

@@ -6,7 +6,8 @@ const Services = () => {
   return (
     <div className='services' id='services'>
         <div class="services-title m-5">
-            <h1>My Services</h1>
+        <h1>What I Do</h1>
+
             {/* <img src={theme_pattern} alt="" height={40}/> */}
         </div>
         <div class="services-container">

@@ -24,11 +24,12 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      Swal.fire({
-  title: "Good job!",
-  text: "You clicked the button!",
+    Swal.fire({
+  title: "Message Sent!",
+  text: "Thanks for reaching out. I’ll get back to you soon.",
   icon: "success"
 });
+
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -44,13 +45,18 @@ const Contact = () => {
   return (
     <div className='contact d-flex justify-content-center align-items-center' id='contact'>
         <div class="contact-title m-5">
-            <h1>Get In Touch</h1>
+            <h1>Contact Me</h1>
+
             {/* <img src={theme_pattern} alt="" width={40} height={40}/> */}
         </div>
         <div class="contact-section">
             <div class="contact-left">
-                <h1>Let's talk</h1>
-                <p>I'm always happy to talk about my work and how I can help you.</p>
+               <h1>Let’s Connect</h1>
+<p>
+  Feel free to reach out if you’d like to discuss a project,
+  collaboration, or opportunity.
+</p>
+
                 <div class="contact-details">
                    <div className="contact-detail">
                       <a href="mailto:arunbabuks03@gmail.com" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
@@ -77,7 +83,8 @@ const Contact = () => {
                 <input type='email' id='email' placeholder='Enter your email' name='email' required/>
                 <label htmlFor='message'>Message</label>
                 <textarea id='message' placeholder='Enter your message' name='message' required></textarea>
-                <button type='submit' className='contact-submit'>Send</button>
+              <button type='submit' className='contact-submit'>Send Message</button>
+
             </form>
             
         </div>
