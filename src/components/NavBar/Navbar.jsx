@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   useEffect(() => {
-    const sectionIds = ["home", "about", "Exp&Projects", "services", "contact", "contact"];
+    const sectionIds = ["home", "about", "Exp&Projects", "services", "projects", "contact"];
 
     const handleScroll = () => {
       const scrollY = window.scrollY + 100;
@@ -41,7 +41,7 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {["home", "about","Exp&Projects","services", "contact"].map((item) => (
+            {["home", "about","Exp&Projects","services", "projects"].map((item) => (
               <li className="nav-item" key={item}>
                 <AnchorLink className="nav-link" offset={50} href={`#${item}`} onClick={() => setMenu(item)}>
                   {item.charAt(0).toUpperCase() + item.slice(1)}
