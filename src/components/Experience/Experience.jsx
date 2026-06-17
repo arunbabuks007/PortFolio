@@ -23,26 +23,26 @@ const Experience = () => {
     '• Interactive speaking practice modules'
   ]
 }
-,
-    {
-  title: 'PicMyBus',
-  technologies: 'PHP, MySQL',
-  description: [
-    'Bus route and timing information system:',
-    '• Search by route or location',
-    '• Clean and user-friendly interface'
-  ]
-}
-,
-   {
-  title: 'Quest Tree',
-  technologies: 'PHP, MySQL',
-  description: [
-    'Data management system for college IRP team:',
-    '• Secure CRUD operations',
-    '• Structured data handling'
-  ]
-}
+// ,
+//     {
+//   title: 'PicMyBus',
+//   technologies: 'PHP, MySQL',
+//   description: [
+//     'Bus route and timing information system:',
+//     '• Search by route or location',
+//     '• Clean and user-friendly interface'
+//   ]
+// }
+// ,
+//    {
+//   title: 'Quest Tree',
+//   technologies: 'PHP, MySQL',
+//   description: [
+//     'Data management system for college IRP team:',
+//     '• Secure CRUD operations',
+//     '• Structured data handling'
+//   ]
+// }
 ,
 {
   title: 'Chrome Extensions',
