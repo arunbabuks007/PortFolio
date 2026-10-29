@@ -16,60 +16,140 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  width: 90%;
+  width: 100%;
 }
 
 /* CARD */
 .mywork-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   border-radius: 16px;
   overflow: hidden;
-  background: #111;
-  transition: all 0.35s ease;
+  background: #151515;
+  border: 1px solid #262626;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-/* IMAGE */
-.mywork-card img {
+.mywork-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border-color: #764ba2;
+}
+
+/* THUMBNAIL */
+.mywork-thumb {
+  position: relative;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #330867, #6b46c1);
+}
+
+.mywork-thumb img {
   width: 100%;
-  height: 210px;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-/* OVERLAY */
-.mywork-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.1)
-  );
-  display: flex;
-  align-items: flex-end;
-  padding: 16px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.mywork-overlay span {
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-}
-
-/* HOVER EFFECT (SOFT & SMART) */
-.mywork-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-}
-
-.mywork-card:hover img {
+.mywork-card:hover .mywork-thumb img {
   transform: scale(1.05);
 }
 
-.mywork-card:hover .mywork-overlay {
-  opacity: 1;
+.mywork-initial {
+  font-size: 72px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* STATUS BADGE */
+.mywork-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.mywork-status-live {
+  background: rgba(22, 163, 74, 0.9);
+}
+
+.mywork-status-dev {
+  background: rgba(217, 119, 6, 0.9);
+}
+
+.mywork-status-prototype {
+  background: rgba(100, 100, 120, 0.9);
+}
+
+/* BODY */
+.mywork-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  flex: 1;
+  color: #fff;
+}
+
+.mywork-body h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.mywork-tagline {
+  margin: 0;
+  font-size: 14px;
+  color: #b415ff;
+  font-weight: 500;
+}
+
+.mywork-desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #c4c4c4;
+}
+
+.mywork-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mywork-tech span {
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  background: #262626;
+  color: #ddd;
+}
+
+.mywork-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.mywork-links a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #764ba2;
+}
+
+.mywork-links a:hover {
+  color: #b415ff;
 }
 
 /* TABLET */
@@ -89,12 +169,12 @@
 
 /* MOBILE */
 @media (max-width: 576px) {
-  .mywork-container {
-    grid-template-columns: 1fr;
+  .mywork {
+    margin: 50px 20px;
   }
 
-  .mywork-card img {
-    height: 190px;
+  .mywork-container {
+    grid-template-columns: 1fr;
   }
 
   .mywork-title h1 {

@@ -31,6 +31,12 @@ const Services_Data = [
   },
   {
     s_no: "06",
+    s_name: "Adobe Premiere Pro Extensions",
+    s_desc:
+      "Build CEP and UXP panels for Premiere Pro with ExtendScript bridges and AI-powered backends for captions, editing automation and publishing."
+  },
+  {
+    s_no: "07",
     s_name: "System Integration & Optimization",
     s_desc:
       "Integrate third-party APIs, optimize database queries, and improve application performance and reliability."

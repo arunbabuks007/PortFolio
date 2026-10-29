@@ -137,13 +137,13 @@ const About = () => {
         </div>
         <hr />
         <div className='about-achievement' data-aos="zoom-in" data-aos-delay="800">
-<h1>6+</h1>
+<h1>4+</h1>
 <p>REAL-WORLD PROJECTS</p>
 
         </div>
         <hr />
         <div className='about-achievement' data-aos="zoom-in" data-aos-delay="900">
-        <h1>2+</h1>
+        <h1>4+</h1>
 <p>PRODUCTION DEPLOYMENTS</p>
 
         </div>

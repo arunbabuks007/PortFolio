@@ -45,16 +45,39 @@ const Experience = () => {
 // }
 ,
 {
-  title: 'Chrome Extensions',
-  technologies: 'JavaScript, Chrome Extension APIs',
+  title: 'EditHero (VidhAstra)',
+  technologies: 'React, TypeScript, Spring Boot, ExtendScript (CEP + UXP), Razorpay, Gemini API',
   description: [
-    'Published multiple Chrome extensions on the Chrome Web Store:',
-    '• Designed and implemented real-world productivity features',
-    '• Followed Chrome Web Store policies and release workflows',
-    '• Gained experience with production deployment and user feedback'
+    'Adobe Premiere Pro extension suite with an AI backend (in active development):',
+    '• 20+ editing tools: AI transcription, viral captions, silence remover, multicam, reframe, colour grading',
+    '• Script to YouTube-publish pipeline with plan gating, quotas and Razorpay payments',
+    '• MCP bridge (Claude Link) so an AI assistant can drive Premiere'
+  ]
+},
+{
+  title: 'Chrome Extensions',
+  technologies: 'JavaScript, Chrome MV3 APIs, Canvas, IndexedDB',
+  description: [
+    'Published and maintained on the Chrome Web Store:',
+    '• SnapMaster: full-page capture engine and a 25-tool screenshot editor (v3)',
+    '• PromptEdge and other extensions',
+    '• Store policy, privacy policy and release workflow experience'
   ]
 }
-
+// Hidden until development is finished:
+/*
+,
+{
+  title: 'Kalyanam, WriteWise & Sruti',
+  technologies: 'Next.js, React Native, Node.js, MongoDB, Ollama, PyTorch',
+  description: [
+    'Ongoing builds:',
+    '• Kalyanam: wedding hall booking with atomic date locks and Razorpay',
+    '• WriteWise: local-first grammar and style assistant',
+    '• Sruti: Tanglish speech-recognition research prototype'
+  ]
+}
+*/
 
   ];
 
