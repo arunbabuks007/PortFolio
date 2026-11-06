@@ -1,6 +1,7 @@
 import verbi_img from './VerBI.png';
 import snapmaster_img from './SnapMasterIcon.png';
 import promptedge_img from './PromptEdge.jpg';
+import youno_img from './YouNo.jpg';
 
 // status: "live" | "dev" | "prototype"  (drives the badge colour in MyWork.css)
 const mywork_data = [
@@ -33,6 +34,21 @@ const mywork_data = [
   },
   {
     w_no: 3,
+    w_name: "YouNo – Distraction Blocker for YouTube",
+    w_img: youno_img,
+    w_status: "live",
+    w_status_label: "Live · v1.7.0",
+    w_tagline: "Chrome extension",
+    w_desc:
+      "Hides YouTube recommendations, Shorts, comments, the sidebar and 300+ more distractions with an individual switch for each. Searchable feature list, saved presets that switch automatically by time of day, video-ad skipping, side-panel mode, backup and restore. Everything runs locally with no tracking.",
+    w_tech: ["JavaScript", "Chrome MV3", "CSS injection", "React (website)"],
+    w_link: "https://chromewebstore.google.com/detail/youno-distraction-blocker/dpkbdjejpnamackklnflnlllmacmelbj",
+    w_link_label: "Chrome Web Store",
+    w_link2: "https://youno-ytblocker.netlify.app",
+    w_link2_label: "Website"
+  },
+  {
+    w_no: 4,
     w_name: "VerBI",
     w_img: verbi_img,
     w_status: "live",
@@ -45,7 +61,7 @@ const mywork_data = [
     w_link_label: "Open app"
   },
   {
-    w_no: 4,
+    w_no: 5,
     w_name: "PromptEdge",
     w_img: promptedge_img,
     w_status: "live",
@@ -57,7 +73,7 @@ const mywork_data = [
     w_link_label: "Chrome Web Store"
   },
 
-  // Hidden until development is finished: TARKA, YOUDONT, Kalyanam, WriteWise, Sruti
+  // Hidden until development is finished: TARKA, Kalyanam, WriteWise, Sruti
   /*
   {
     w_no: 5,
@@ -68,16 +84,6 @@ const mywork_data = [
     w_desc:
       "An in-browser AI agent: side-panel chat on any page, page-aware answers, screenshot Q&A, slash commands, YouTube summaries, file drop and page monitoring.",
     w_tech: ["JavaScript", "Chrome MV3", "Side Panel API", "LLM APIs"]
-  },
-  {
-    w_no: 6,
-    w_name: "YOUDONT",
-    w_status: "dev",
-    w_status_label: "Built · v1.6.9",
-    w_tagline: "Chrome extension",
-    w_desc:
-      "Removes YouTube distractions: related videos, Shorts, comments, homepage recommendations and trending, with per-section toggles.",
-    w_tech: ["JavaScript", "Chrome MV3", "CSS injection"]
   },
   {
     w_no: 7,
