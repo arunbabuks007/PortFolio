@@ -60,7 +60,8 @@ const Experience = () => {
   technologies: 'JavaScript, Chrome MV3 APIs, Canvas, IndexedDB',
   description: [
     'Published and maintained on the Chrome Web Store:',
-    '• SnapMaster: full-page capture engine and a 25-tool screenshot editor (v3)',
+    '• YouScript: YouTube transcript & chapter reader with instant jump, real-time follow, search, and 150+ language auto-translations (v1.1.6)',
+    '• SnapMaster: full-page capture engine and a 25-tool screenshot editor with area spotlight capture (v3.0.3)',
     '• YouNo: YouTube distraction blocker with 300+ switches, presets, auto-switching by time and a redesigned searchable popup (v1.7.0)',
     '• PromptEdge: prompt generator and optimizer for 30+ AI tools',
     '• Product websites, privacy policies, store listings and release workflow'

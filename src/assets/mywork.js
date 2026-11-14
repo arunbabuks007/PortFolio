@@ -2,6 +2,7 @@ import verbi_img from './VerBI.png';
 import snapmaster_img from './SnapMasterIcon.png';
 import promptedge_img from './PromptEdge.jpg';
 import youno_img from './YouNo.jpg';
+import youscript_img from './YouScript.jpg';
 
 // status: "live" | "dev" | "prototype"  (drives the badge colour in MyWork.css)
 const mywork_data = [
@@ -19,13 +20,28 @@ const mywork_data = [
   },
   {
     w_no: 2,
+    w_name: "YouScript – YouTube Transcript",
+    w_img: youscript_img,
+    w_status: "live",
+    w_status_label: "Live · v1.1.6",
+    w_tagline: "Chrome extension",
+    w_desc:
+      "Full transcript and video chapters right beside any YouTube video. Search within lines, auto-scroll and highlight as the video plays, click any line or chapter to jump, and switch between 150+ languages with auto-translation to your default language. Copy clean text or download as .txt / .srt subtitle files. 100% private with no server or account.",
+    w_tech: ["JavaScript", "Chrome MV3", "DOM APIs", "React (website)"],
+    w_link: "https://chromewebstore.google.com/detail/youscript-%E2%80%93-youtube-trans/afjkadehppclmlcklmmncmalmoehejcl",
+    w_link_label: "Chrome Web Store",
+    w_link2: "https://youscript-ytscript.netlify.app",
+    w_link2_label: "Website"
+  },
+  {
+    w_no: 3,
     w_name: "SnapMaster – Screenshot & Editor",
     w_img: snapmaster_img,
     w_status: "live",
-    w_status_label: "Live · v3 editor rolling out",
+    w_status_label: "Live · v3.0.3",
     w_tagline: "Chrome extension",
     w_desc:
-      "Full-page, area and visible-area screenshots. Full-page capture scrolls and stitches on an offscreen canvas, handling inner scrollers and fixed headers. The v3 editor is object-based with ~25 tools, layers, beautify, blur, PDF export, history gallery and auto-copy.",
+      "Full-page, area (spotlight capture) and visible-area screenshots. Full-page capture scrolls and stitches on an offscreen canvas, handling inner scrollers and fixed headers. The v3 editor is object-based with ~25 tools, layers, beautify, blur, PDF export, history gallery and auto-copy.",
     w_tech: ["JavaScript", "Chrome MV3", "Canvas", "IndexedDB", "React (website)"],
     w_link: "https://chromewebstore.google.com/detail/snapmaster-–-screenshot-e/bllhjhfajpclmnlogplcfjjnlkmnlfmp",
     w_link_label: "Chrome Web Store",
@@ -33,7 +49,7 @@ const mywork_data = [
     w_link2_label: "Website"
   },
   {
-    w_no: 3,
+    w_no: 4,
     w_name: "YouNo – Distraction Blocker for YouTube",
     w_img: youno_img,
     w_status: "live",
@@ -48,7 +64,7 @@ const mywork_data = [
     w_link2_label: "Website"
   },
   {
-    w_no: 4,
+    w_no: 5,
     w_name: "VerBI",
     w_img: verbi_img,
     w_status: "live",
@@ -61,7 +77,7 @@ const mywork_data = [
     w_link_label: "Open app"
   },
   {
-    w_no: 5,
+    w_no: 6,
     w_name: "PromptEdge",
     w_img: promptedge_img,
     w_status: "live",
