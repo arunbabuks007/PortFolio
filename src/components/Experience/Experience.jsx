@@ -1,87 +1,44 @@
 import React from 'react';
 import './Experience.css';
+import { experience } from '../../data/profile';
 
 const Experience = () => {
   const projects = [
-   {
-  title: 'ChatBOT',
-  technologies: 'Java, Spring Boot, React (Vite), PostgreSQL, MySQL, Gemini API',
-  description: [
-    'Enterprise chatbot platform developed at Meganar Technologies:',
-    '• One-to-One & One-to-Many real-time chat system',
-    '• Virtual Bot for 24/7 automated support',
-    '•AI Bot (Document-based)'
-  ]
-},
+    ...experience.map(job => ({
+      title: `${job.company} — ${job.role}`,
+      technologies: job.technologies.join(', '),
+      description: [job.period, job.summary, ...job.contributions.map(point => `• ${point}`)],
+    })),
     {
-  title: 'VerBI',
-  technologies: 'Java, Spring Boot, React, PostgreSQL, Gemini API',
-  description: [
-    'English learning platform:',
-    '• Grammar lessons explained in Tamil',
-    '• AI-powered doubt clarification',
-    '• Interactive speaking practice modules'
-  ]
-}
-// ,
-//     {
-//   title: 'PicMyBus',
-//   technologies: 'PHP, MySQL',
-//   description: [
-//     'Bus route and timing information system:',
-//     '• Search by route or location',
-//     '• Clean and user-friendly interface'
-//   ]
-// }
-// ,
-//    {
-//   title: 'Quest Tree',
-//   technologies: 'PHP, MySQL',
-//   description: [
-//     'Data management system for college IRP team:',
-//     '• Secure CRUD operations',
-//     '• Structured data handling'
-//   ]
-// }
-,
-{
-  title: 'EditHero (VidhAstra)',
-  technologies: 'React, TypeScript, Spring Boot, ExtendScript (CEP + UXP), Razorpay, Gemini API',
-  description: [
-    'Adobe Premiere Pro extension suite with an AI backend (in active development):',
-    '• 20+ editing tools: AI transcription, viral captions, silence remover, multicam, reframe, colour grading',
-    '• Script to YouTube-publish pipeline with plan gating, quotas and Razorpay payments',
-    '• MCP bridge (Claude Link) so an AI assistant can drive Premiere',
-    '• Read-only admin API and a React operator dashboard for users and payments'
-  ]
-},
-{
-  title: 'Chrome Extensions',
-  technologies: 'JavaScript, Chrome MV3 APIs, Canvas, IndexedDB',
-  description: [
-    'Published and maintained on the Chrome Web Store:',
-    '• YouScript: YouTube transcript & chapter reader with instant jump, real-time follow, search, and 150+ language auto-translations (v1.1.6)',
-    '• SnapMaster: full-page capture engine and a 25-tool screenshot editor with area spotlight capture (v3.0.3)',
-    '• YouNo: YouTube distraction blocker with 300+ switches, presets, auto-switching by time and a redesigned searchable popup (v1.7.0)',
-    '• PromptEdge: prompt generator and optimizer for 30+ AI tools',
-    '• Product websites, privacy policies, store listings and release workflow'
-  ]
-}
-// Hidden until development is finished:
-/*
-,
-{
-  title: 'Kalyanam, WriteWise & Sruti',
-  technologies: 'Next.js, React Native, Node.js, MongoDB, Ollama, PyTorch',
-  description: [
-    'Ongoing builds:',
-    '• Kalyanam: wedding hall booking with atomic date locks and Razorpay',
-    '• WriteWise: local-first grammar and style assistant',
-    '• Sruti: Tanglish speech-recognition research prototype'
-  ]
-}
-*/
-
+      title: 'Freely (Soul) & VerBI',
+      technologies: 'React, React Native, Node.js, Express, MongoDB, Socket.IO, Gemini API; earlier Spring Boot and PostgreSQL',
+      description: [
+        'Independent English-learning products for web and mobile:',
+        '• Grammar, vocabulary, speaking practice, AI conversations and synced learning progress',
+        '• Ported the VerBI API from Spring Boot to Node.js and integrated it into Freely with separate accounts and data',
+        '• Authentication, document Q&A, usage limits and deployment on Render and Netlify',
+      ],
+    },
+    {
+      title: 'EditHero (VidhAstra)',
+      technologies: 'React, TypeScript, Spring Boot, ExtendScript, CEP / UXP, Razorpay, Gemini API',
+      description: [
+        'Adobe Premiere Pro extension suite with an AI backend (in active development):',
+        '• AI transcription, captions, editing automation and an ExtendScript host bridge',
+        '• Publishing workflows, plan quotas and Razorpay integration',
+      ],
+    },
+    {
+      title: 'Chrome Extensions',
+      technologies: 'JavaScript, Chrome MV3 APIs, Canvas, IndexedDB, Node.js, Gemini API',
+      description: [
+        'Published browser products and their supporting websites:',
+        '• YouScript: YouTube transcripts, chapters, exports and AI-backed summaries, Q&A and translations',
+        '• SnapMaster: screenshot capture, canvas stitching, annotation, layers, blur and PDF export',
+        '• YouNo: granular distraction controls, presets, scheduling and local preferences',
+        '• PromptEdge: prompt creation and optimization for AI tools',
+      ],
+    },
   ];
 
   return (
@@ -96,7 +53,7 @@ const Experience = () => {
   <p>
    I’m a <strong>Software Engineer</strong> building full-stack and real-time
 applications using <strong>Java, Spring Boot, React</strong>, and currently
-working with <strong>MERN, MQTT, WebSockets</strong>, and
+working with <strong>Node.js, Redux Toolkit, PostgreSQL, Redis, MQTT and WebSockets</strong>, and
 <strong>DigitalOcean</strong>.
 
   </p>

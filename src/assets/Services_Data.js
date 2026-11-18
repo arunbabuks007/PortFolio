@@ -3,7 +3,7 @@ const Services_Data = [
     s_no: "01",
     s_name: "Full-Stack Web Development",
     s_desc:
-      "Design and develop scalable web applications using Java, Spring Boot, React, and MERN stack with clean architecture and production-ready code."
+      "Build responsive React interfaces and connect them to Node.js or Spring Boot services, with authentication and database workflows."
   },
   {
     s_no: "02",
@@ -15,13 +15,13 @@ const Services_Data = [
     s_no: "03",
     s_name: "Real-Time Systems",
     s_desc:
-      "Develop real-time applications using WebSockets and MQTT for live dashboards, chat systems, and IoT data streaming."
+      "Build MQTT and WebSocket workflows for live SCADA monitoring, IoT dashboards and chat, supported by Redis caching."
   },
   {
     s_no: "04",
     s_name: "Cloud Deployment",
     s_desc:
-      "Deploy and manage applications on DigitalOcean with database setup, S3-compatible object storage, and production configurations."
+      "Work with Render, Netlify and Vercel deployments, GCP and AWS EC2, and DigitalOcean Spaces for S3-compatible object storage."
   },
   {
     s_no: "05",

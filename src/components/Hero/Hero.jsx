@@ -96,13 +96,13 @@ const Hero = () => {
       />
 
       <h1>
-        <span>I'm Arun Babu Subramanian</span>, a Software Engineer building scalable web applications
+        <span>I'm Arun Babu K S</span>, a Software Engineer building full-stack and real-time applications
       </h1>
 
       <p>
-        Software Engineer with hands-on experience in Java, Spring Boot, and React.js.
-        I build scalable backend services, clean APIs, and responsive UIs with a strong focus
-        on performance, code quality, and real-world problem solving.
+        Software Engineer at Daacoworks Technologies, based in Madurai, India.
+        I build enterprise IoT and SCADA applications with React, Node.js, Java, Spring Boot,
+        PostgreSQL, Redis and MQTT, alongside AI products and browser extensions.
       </p>
 
 

@@ -1,137 +1,138 @@
-import verbi_img from './VerBI.png';
-import snapmaster_img from './SnapMasterIcon.png';
-import promptedge_img from './PromptEdge.jpg';
-import youno_img from './YouNo.jpg';
-import youscript_img from './YouScript.jpg';
+import verbiImage from "./VerBI.png";
+import snapmasterImage from "./SnapMasterIcon.png";
+import promptedgeImage from "./PromptEdge.jpg";
+import younoImage from "./YouNo.jpg";
+import youscriptImage from "./YouScript.jpg";
 
-// status: "live" | "dev" | "prototype"  (drives the badge colour in MyWork.css)
-const mywork_data = [
+const projects = [
   {
     w_no: 1,
-    w_name: "EditHero (VidhAstra)",
-    w_status: "dev",
-    w_status_label: "In active development",
-    w_tagline: "Premiere Pro extension suite + AI backend",
+    w_name: "Freely (Soul)",
+    w_category: "Web apps",
+    w_status: "live",
+    w_status_label: "Live web app",
+    w_tagline: "English learning across web and mobile",
     w_desc:
-      "A dual-host (CEP + UXP) Adobe Premiere Pro extension with 20+ editing tools: AI transcription and viral captions, silence remover, multicam, reframe, colour grading, motion tracking, 3D carousel and an MCP bridge so Claude can drive Premiere. A full script → export → metadata → thumbnail → YouTube publish pipeline sits on a Spring Boot backend with plan gating, quotas and Razorpay payments.",
-    w_tech: ["React", "TypeScript", "Spring Boot", "ExtendScript", "Razorpay", "Gemini"],
-    w_link: "https://edithero.netlify.app",
-    w_link_label: "Visit website"
+      "An English-learning platform with AI conversations, grammar support, speaking practice, lessons and synced progress. The Node.js backend supports real-time communication, multiple AI providers and separate product modules, including the migrated Verbi API.",
+    w_tech: [
+      "React",
+      "React Native",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "AI APIs",
+    ],
+    w_link: "https://freely-web.netlify.app",
+    w_link_label: "Explore Freely",
   },
   {
     w_no: 2,
-    w_name: "YouScript – YouTube Transcript",
-    w_img: youscript_img,
+    w_name: "VerBI",
+    w_category: "Web apps",
+    w_img: verbiImage,
     w_status: "live",
-    w_status_label: "Live · v1.1.6",
-    w_tagline: "Chrome extension",
+    w_status_label: "Live web app",
+    w_tagline: "English learning for Tamil speakers",
     w_desc:
-      "Full transcript and video chapters right beside any YouTube video. Search within lines, auto-scroll and highlight as the video plays, click any line or chapter to jump, and switch between 150+ languages with auto-translation to your default language. Copy clean text or download as .txt / .srt subtitle files. 100% private with no server or account.",
-    w_tech: ["JavaScript", "Chrome MV3", "DOM APIs", "React (website)"],
-    w_link: "https://chromewebstore.google.com/detail/youscript-%E2%80%93-youtube-trans/afjkadehppclmlcklmmncmalmoehejcl",
-    w_link_label: "Chrome Web Store",
-    w_link2: "https://youscript-ytscript.netlify.app",
-    w_link2_label: "Website"
+      "Grammar and mini-lessons with Tamil explanations, vocabulary and verb libraries, and Gemini-powered document Q&A. Originally built with Spring Boot and PostgreSQL, its API was ported to Node.js and MongoDB, then integrated into the Freely backend with separate accounts and data.",
+    w_tech: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Gemini API",
+      "Spring Boot",
+      "PostgreSQL",
+    ],
+    w_link: "https://verbi-ai.netlify.app",
+    w_link_label: "Explore VerBI",
   },
   {
     w_no: 3,
-    w_name: "SnapMaster – Screenshot & Editor",
-    w_img: snapmaster_img,
-    w_status: "live",
-    w_status_label: "Live · v3.0.3",
-    w_tagline: "Chrome extension",
+    w_name: "EditHero (VidhAstra)",
+    w_category: "Creative tools",
+    w_status: "dev",
+    w_status_label: "In active development",
+    w_tagline: "Editing tools for Adobe Premiere Pro",
     w_desc:
-      "Full-page, area (spotlight capture) and visible-area screenshots. Full-page capture scrolls and stitches on an offscreen canvas, handling inner scrollers and fixed headers. The v3 editor is object-based with ~25 tools, layers, beautify, blur, PDF export, history gallery and auto-copy.",
-    w_tech: ["JavaScript", "Chrome MV3", "Canvas", "IndexedDB", "React (website)"],
-    w_link: "https://chromewebstore.google.com/detail/snapmaster-–-screenshot-e/bllhjhfajpclmnlogplcfjjnlkmnlfmp",
-    w_link_label: "Chrome Web Store",
-    w_link2: "https://snapmaster-screenshot.netlify.app",
-    w_link2_label: "Website"
+      "A Premiere Pro extension suite with CEP/UXP panels, an ExtendScript host bridge and AI-assisted editing workflows. Work includes transcription, captions, editing automation, a publishing pipeline, plan quotas and Razorpay integration, backed by Spring Boot.",
+    w_tech: [
+      "React",
+      "TypeScript",
+      "Spring Boot",
+      "CEP / UXP",
+      "ExtendScript",
+      "Gemini API",
+      "Razorpay",
+    ],
+    w_link: "https://edithero.netlify.app",
+    w_link_label: "Visit EditHero",
   },
   {
     w_no: 4,
-    w_name: "YouNo – Distraction Blocker for YouTube",
-    w_img: youno_img,
+    w_name: "YouScript",
+    w_category: "Extensions",
+    w_img: youscriptImage,
     w_status: "live",
-    w_status_label: "Live · v1.7.0",
-    w_tagline: "Chrome extension",
+    w_status_label: "Chrome extension",
+    w_tagline: "Read, navigate and work with YouTube transcripts",
     w_desc:
-      "Hides YouTube recommendations, Shorts, comments, the sidebar and 300+ more distractions with an individual switch for each. Searchable feature list, saved presets that switch automatically by time of day, video-ad skipping, side-panel mode, backup and restore. Everything runs locally with no tracking.",
-    w_tech: ["JavaScript", "Chrome MV3", "CSS injection", "React (website)"],
-    w_link: "https://chromewebstore.google.com/detail/youno-distraction-blocker/dpkbdjejpnamackklnflnlllmacmelbj",
-    w_link_label: "Chrome Web Store",
-    w_link2: "https://youno-ytblocker.netlify.app",
-    w_link2_label: "Website"
+      "A YouTube transcript and chapter reader with searchable lines, playback-following highlights, timestamp navigation and subtitle exports. The product also includes Gemini-backed summary, Q&A and translation services with caching and usage limits in the shared Freely backend.",
+    w_tech: ["JavaScript", "Chrome MV3", "Node.js", "MongoDB", "Gemini API"],
+    w_link: "https://youscript-ytscript.netlify.app",
+    w_link_label: "Visit YouScript",
+    w_link2:
+      "https://chromewebstore.google.com/detail/youscript-%E2%80%93-youtube-trans/afjkadehppclmlcklmmncmalmoehejcl",
+    w_link2_label: "Chrome Web Store",
   },
   {
     w_no: 5,
-    w_name: "VerBI",
-    w_img: verbi_img,
+    w_name: "SnapMaster",
+    w_category: "Extensions",
+    w_img: snapmasterImage,
     w_status: "live",
-    w_status_label: "Live",
-    w_tagline: "English learning for Tamil speakers",
+    w_status_label: "Chrome extension",
+    w_tagline: "Screenshot capture and editing",
     w_desc:
-      "Grammar lessons explained in Tamil, AI-powered doubt clarification and interactive speaking practice, backed by a Spring Boot API and PostgreSQL with Gemini for the AI features.",
-    w_tech: ["React", "Spring Boot", "PostgreSQL", "Gemini API"],
-    w_link: "https://verbi-ai.netlify.app",
-    w_link_label: "Open app"
+      "Full-page, selected-area and visible-area screenshot capture with canvas stitching. An object-based editor brings annotation, layers, blur, beautification, PDF export and a local history gallery into the browser.",
+    w_tech: ["JavaScript", "Chrome MV3", "Canvas", "IndexedDB", "React"],
+    w_link: "https://snapmaster-screenshot.netlify.app",
+    w_link_label: "Visit SnapMaster",
+    w_link2:
+      "https://chromewebstore.google.com/detail/snapmaster-–-screenshot-e/bllhjhfajpclmnlogplcfjjnlkmnlfmp",
+    w_link2_label: "Chrome Web Store",
   },
   {
     w_no: 6,
-    w_name: "PromptEdge",
-    w_img: promptedge_img,
+    w_name: "YouNo",
+    w_category: "Extensions",
+    w_img: younoImage,
     w_status: "live",
-    w_status_label: "Live",
-    w_tagline: "Chrome extension",
-    w_desc: "Published on the Chrome Web Store.",
-    w_tech: ["JavaScript", "Chrome Extension APIs"],
-    w_link: "https://chromewebstore.google.com/detail/promptedge/bmghmbjhikdailncbdicbocjgedllnee",
-    w_link_label: "Chrome Web Store"
-  },
-
-  // Hidden until development is finished: TARKA, Kalyanam, WriteWise, Sruti
-  /*
-  {
-    w_no: 5,
-    w_name: "TARKA – AI Browser Assistant",
-    w_status: "dev",
-    w_status_label: "Built · v1.0",
-    w_tagline: "Chrome extension",
+    w_status_label: "Chrome extension",
+    w_tagline: "A more focused YouTube experience",
     w_desc:
-      "An in-browser AI agent: side-panel chat on any page, page-aware answers, screenshot Q&A, slash commands, YouTube summaries, file drop and page monitoring.",
-    w_tech: ["JavaScript", "Chrome MV3", "Side Panel API", "LLM APIs"]
+      "A distraction blocker with granular controls for recommendations, Shorts, comments and other YouTube surfaces. Includes searchable settings, saved presets, time-based switching, side-panel controls and backup/restore, with preferences stored locally.",
+    w_tech: ["JavaScript", "Chrome MV3", "CSS injection", "React"],
+    w_link: "https://youno-ytblocker.netlify.app/features",
+    w_link_label: "Explore features",
+    w_link2:
+      "https://chromewebstore.google.com/detail/youno-distraction-blocker/dpkbdjejpnamackklnflnlllmacmelbj",
+    w_link2_label: "Chrome Web Store",
   },
   {
     w_no: 7,
-    w_name: "Kalyanam",
-    w_status: "dev",
-    w_status_label: "In development",
-    w_tagline: "Wedding hall booking platform",
+    w_name: "PromptEdge",
+    w_category: "Extensions",
+    w_img: promptedgeImage,
+    w_status: "live",
+    w_status_label: "Chrome extension",
+    w_tagline: "Prompt creation and optimization",
     w_desc:
-      "BookMyShow-style venue booking for three roles (user, owner, admin): atomic 5-minute date locks, Razorpay payments, owner venue management and admin approvals across a web app, a mobile app and one API.",
-    w_tech: ["Next.js", "React Native", "Node.js", "MongoDB", "Razorpay"]
+      "A browser extension for generating and refining prompts for AI tools. Built and published with the surrounding product work: store listing, release management and browser-extension integration.",
+    w_tech: ["JavaScript", "Chrome Extension APIs"],
+    w_link:
+      "https://chromewebstore.google.com/detail/promptedge/bmghmbjhikdailncbdicbocjgedllnee",
+    w_link_label: "Chrome Web Store",
   },
-  {
-    w_no: 8,
-    w_name: "WriteWise",
-    w_status: "dev",
-    w_status_label: "In development",
-    w_tagline: "Local-first writing assistant",
-    w_desc:
-      "A Grammarly-style grammar and style platform that runs on local models (Ollama) with Gemini as an option, built as a tested monorepo.",
-    w_tech: ["TypeScript", "Ollama", "Gemini", "Monorepo"]
-  },
-  {
-    w_no: 9,
-    w_name: "Sruti",
-    w_status: "prototype",
-    w_status_label: "Research prototype",
-    w_tagline: "Tanglish speech recognition",
-    w_desc:
-      "An own Tamil + English (Tanglish) speech model for EditHero captions: pseudo-label distillation, Kaggle T4 training and int8 CPU deployment. The pipeline works end to end; model training is still ahead.",
-    w_tech: ["Python", "PyTorch", "ASR", "ONNX / int8"]
-  }
-  */
 ];
-
-export default mywork_data;
+export default projects;

@@ -27,7 +27,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
       <p className="footer-bottom-left" id="Connect">
-  © 2025 Arun Babu Subramanian. All rights reserved.
+  © 2026 Arun Babu K S. All rights reserved.
 </p>
 
         <div className="footer-bottom-right">

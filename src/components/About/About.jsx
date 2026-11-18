@@ -95,18 +95,30 @@ const About = () => {
         <div className='about-right mx-4' data-aos="fade-left">
           <div className="about-para">
             <p>
-              I’m a Software Engineer specializing in Java-based backend development
-              and modern full-stack applications.
-              I build scalable REST APIs using Spring Boot,
-              design efficient database schemas,
-              and develop responsive UIs with React.js.
+              I’m a Software Engineer at Daacoworks Technologies (October 2025–present),
+              working on the Tamidas IoT &amp; SCADA platform. My work spans Node.js APIs,
+              React interfaces with Redux Toolkit, PostgreSQL, Redis, MQTT and WebSockets,
+              alongside Java Spring Boot microservices and DigitalOcean Spaces integration.
             </p>
 
             <p>
-              I have experience working on real-world projects involving authentication,
-              role-based access, database optimization, and API integrations.
-              I value clean code, system performance, and delivering reliable solutions
-              that meet business requirements.
+              Previously, I interned at Meganar Technologies (January–June 2025), building
+              AI chat applications with React, Spring Boot, PostgreSQL and Gemini, plus
+              a PHP/MySQL e-commerce application. I also build Freely, VerBI, EditHero
+              and Chrome extensions, with deployment experience across Render, Netlify,
+              Vercel, GCP and AWS EC2.
+            </p>
+            <p>
+              My toolkit also includes TypeScript, Express, Hibernate, MongoDB, Bootstrap,
+              Tailwind CSS, Git, GitHub, Postman, Linux, Docker, Chrome Extension APIs,
+              Adobe CEP/UXP, ExtendScript, Razorpay, Gemini and OpenAI APIs. I work with
+              REST APIs, authentication, code reviews, Agile delivery and production troubleshooting.
+              Additional exposure includes GraphQL, Kubernetes and broader AWS services.
+            </p>
+            <p>
+              Education: completed a master’s degree in Computer Engineering at KLN College
+              of Engineering and a bachelor’s degree in Computer Engineering at Yadava College.
+              Languages: Tamil (fluent) and English (intermediate).
             </p>
           </div>
 
